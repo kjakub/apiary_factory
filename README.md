@@ -1,3 +1,7 @@
+api-factory
+===========
+wrapper around virtualmaster dictionaries to swing with factory girl
+
 Sprint no.1
   - create project on github
   - commit this raw notes
