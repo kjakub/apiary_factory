@@ -18,6 +18,7 @@ Sprint no.1
   - make dynamically created factories names map configurable
   - DOCUMENT ALL CONFIGRATION POSSIBILITIES
   - develop as gem ApiaryFactory
+    - ok
   - include in spec_helpers
 
 
