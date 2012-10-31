@@ -4,8 +4,11 @@ wrapper around virtualmaster dictionaries to swing with factory girl
 
 Sprint no.1
   - create project on github
+    - ok
   - commit this raw notes
+    - ok
   - please investigate about possible duplicite project
+    - nothing found  
   - refactor following notes as code :) 
   - imlement in all Dictionary at least method member_attributes_not_saved [:not_saved]
   - Dynamically build default Factories from all available dictionaries in submodule
