@@ -6,10 +6,10 @@ require 'apiary_factory/version'
 Gem::Specification.new do |gem|
   gem.name          = "apiary_factory"
   gem.version       = ApiaryFactory::VERSION
-  gem.authors       = ["kjakub","jana4u"]
-  gem.email         = ["jakub.kuchar@virtualmaster.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.authors       = ["kjakub", "Jana Dvořáková (Jana4U)"]
+  gem.email         = ["jakub.kuchar@virtualmaster.com", "jana4u@seznam.cz"]
+  gem.description   = %q{Use your dictionaries for apiary.io with factory_girl in tests.}
+  gem.summary       = %q{Use your dictionaries for apiary.io with factory_girl.}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
