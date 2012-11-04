@@ -31,7 +31,8 @@ module ApiaryGirl
   end
 
   def self.method_missing(method, *args, &block)
-    if args.size >= 2 && FactoryGirl::Syntax::Methods.instance_methods(false).include?(method)
+    factory_girl_methods = FactoryGirl::Syntax::Methods.instance_methods(false)
+    if args.size >= 2 && (factory_girl_methods.include?(method) || factory_girl_methods.include?(method.to_s))
       factory_name = args.shift
       dictionary_method = args.shift
       if dictionary_module = definitions[factory_name]
