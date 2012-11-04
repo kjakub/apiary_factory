@@ -37,6 +37,7 @@ module ApiaryGirl
       dictionary_method = args.shift
       if dictionary_module = definitions[factory_name]
         hash = dictionary_module.send(dictionary_method)
+        hash = hash[factory_name] if hash.length == 1 && hash.keys.first.to_sym == factory_name
         if !args.empty? && overrides = args.shift and overrides.is_a?(Hash)
           hash = hash.merge(overrides)
         end
