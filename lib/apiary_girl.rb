@@ -49,4 +49,9 @@ module ApiaryGirl
       super
     end
   end
+
+  def self.create_collection(factory_name,count,method)
+    count.times{ self.send(:create,factory_name,method) }
+  end
+
 end
