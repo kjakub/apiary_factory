@@ -30,4 +30,12 @@ class BasicTest < Test::Unit::TestCase
     assert_equal "test@example.com", customer.email
     assert_equal true, customer.admin?
   end
+
+  def test_building_factories_collection
+    customer = ApiaryGirl.create_collection(:customer, :member_attributes_not_saved, 3)
+
+    # assert_equal "test@example.com", customer.email
+    # assert_equal true, customer.admin?
+  end
+
 end

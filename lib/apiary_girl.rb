@@ -30,6 +30,15 @@ module ApiaryGirl
     end
   end
 
+  def self.create_collection(factory_name, method, count)
+    output = []
+    count.times do 
+      object = self.send(:create,factory_name,method)
+      output << object
+    end
+    output
+  end
+
   def self.method_missing(method, *args, &block)
     factory_girl_methods = FactoryGirl::Syntax::Methods.instance_methods(false)
     if args.size >= 2 && (factory_girl_methods.include?(method) || factory_girl_methods.include?(method.to_s))
@@ -48,10 +57,6 @@ module ApiaryGirl
     else
       super
     end
-  end
-
-  def self.create_collection(factory_name,count,method)
-    count.times{ self.send(:create,factory_name,method) }
   end
 
 end
